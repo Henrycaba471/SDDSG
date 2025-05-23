@@ -60,8 +60,10 @@ form fieldset legend{
 }
 .data{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
+    justify-content: center;
+    align-items: center;
 }
 span{
     font-size: 14px;
