@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/imgs/mesa-de-ayuda.png" type="image/x-icon" />
+    <title>Mesa de ayuda | Desenrolar, Descongelar</title>
+</head>
+
+<body>
+    <main>
+        <form>
+            <h3>Formulario para desenrolar o descongelar un giro</h3>
+            <h4>
+                <input type="text" id="pay-concept" required/> pago de
+                <input type="text" id="pay-type" required/>
+            </h4>
+            <div class="data">
+                <fieldset>
+                    <legend>Datos del cliente</legend>
+                    <label for="pin-giro">Pin del giro:<span>*</span></label>
+                    <input type="text" id="pin-giro" placeholder="Pin del giro" required/>
+                    <label for="client-name">Nombre del cliente:<span>*</span></label>
+                    <input type="text" id="client-name" placeholder="Nombre del cliente" required/>
+                    <label for="client-doc">Cédula del cliente:<span>*</span></label>
+                    <input type="text" id="client-doc" placeholder="Cédula del cliente" required/>
+                    <label for="birthday">Fecha de nacimiento:<span>*</span> </label>
+                    <input type="date" id="birthday" placeholder="Fecha de nacimiento" required/>
+                    <label for="expedition-date">Fecha de expedición:<span>*</span></label>
+                    <input type="date" id="expedition" placeholder="Fecha de expedición" required/>
+                    <label for="phone">Teléfono cliente:</label>
+                    <input type="text" id="client-phone" placeholder="Teléfono" />
+                </fieldset>
+                <fieldset>
+                    <legend>Datos del asesor</legend>
+                    <label for="adviser-name">Nombre del asesor:<span>*</span></label>
+                    <input type="text" id="adviser-name" placeholder="Nombre del asesor" value="José Trinidad Garcia Rodriguez" required/>
+                    <label for="adviser-doc">Cédula del asesor:<span>*</span></label>
+                    <input type="text" id="adviser-doc" placeholder="Cédula del asesor" value="13375044" required/>
+                    <label for="punto-de-pago">Punto:<span>*</span></label>
+                    <input type="text" id="punto-de-pago" placeholder="Punto" value="La Trinidad" required/>
+                    <label for="code">Código:<span>*</span></label>
+                    <input type="text" id="code" placeholder="Código" value="54250009" required/>
+
+                    <div class="datos-lider">
+                        <label for="lider">Teléfono líder:</label>
+                        <input type="text" id="phone-lid" placeholder="Teléfono líder" />
+                    </div>
+                </fieldset>
+            </div>
+            <div class="soporte-tic">
+                <p>soportetic@estrategias.co</p>
+                <p>mesadeayudasg@supergirosnortesantander.co</p>
+            </div>
+
+            <div class="btn">
+                <button class="send">Enviar</button>
+                <button class="clean">Limpiar</button>
+            </div>
+        </form>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
