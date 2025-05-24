@@ -38,13 +38,9 @@ btnSend.addEventListener("click", (e) => {
         separator: '______________________________________________',
     };
     
-    let destinatario = data?.phoneLi;
+    let destinatario = data?.phoneLi || '3134845367' ;
     console.log(destinatario);
-    if (typeof destinatario !== 'string' || destinatario.trim() === '' || destinatario.length !== 10) {
-        destinatario = '3134845367';
-    }
-    console.log(destinatario);
-    
+
     let message = encodeURIComponent(
         `${data.concepto.toUpperCase()} \n\n` +
         `${data.pin.toUpperCase()} \n` +
