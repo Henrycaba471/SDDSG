@@ -20,6 +20,7 @@ btnSend.addEventListener("click", (e) => {
     if (!$pin || !$client || !$doc || !$birthday || !$expedition || !$asesor || !$asesorDoc || !$punto || !$code) {
         return alert('Los campos con asterisco (*) son obligatorios');
     }
+    
 
     const data = {
         concepto: `${document.querySelector("#pay-concept").value} pago de ${document.querySelector("#pay-type").value}`,
@@ -36,6 +37,11 @@ btnSend.addEventListener("click", (e) => {
         phoneLi: `teléfono líder: ${$phoneLi}`,
         separator: '______________________________________________',
     };
+    
+    let destinatario = data?.phoneLi;
+    if (typeof destinatario !== 'string' || destinatario.trim() === '' || destinatario.length !== 10) {
+        destinatario = '3134845367';
+    }
 
     let message = encodeURIComponent(
         `${data.concepto.toUpperCase()} \n\n` +
