@@ -38,7 +38,7 @@ btnSend.addEventListener("click", (e) => {
         separator: '______________________________________________',
     };
     
-    let destinatario = data?.phoneLi || '3134845367' ;
+    let destinatario = data?.phoneLi.trim() || '3134845367' ;
     console.log(destinatario);
 
     let message = encodeURIComponent(
