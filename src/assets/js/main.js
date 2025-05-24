@@ -37,8 +37,12 @@ btnSend.addEventListener("click", (e) => {
         phoneLi: `teléfono líder: ${$phoneLi}`,
         separator: '______________________________________________',
     };
-    
-    let destinatario = data?.phoneLi.trim() || '3134845367' ;
+
+    let destinatario = (typeof $phoneLi === 'string') ? $phoneLi.trim() : '';
+    if (!destinatario || destinatario.length < 10) {
+        destinatario = '3134845367';
+    }
+
     console.log(destinatario);
 
     let message = encodeURIComponent(
