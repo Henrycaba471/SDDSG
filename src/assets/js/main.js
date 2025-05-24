@@ -59,7 +59,7 @@ btnSend.addEventListener("click", (e) => {
         `${data.separator} \n\n` +
         `ANEXAR FOTO DE LA CÉDULA DEL CLIENTE POR AMBOS LADOS ↓ \n`
     );
-    let url = `https://api.whatsapp.com/send?phone=573134845367&text=${message}`;
+    let url = `https://api.whatsapp.com/send?phone=57${destinatario}&text=${message}`;
     window.open(url, '_blank');
     //console.log(data);
 });
